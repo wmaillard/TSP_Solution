@@ -6,10 +6,7 @@ simulatedAnnealing::simulatedAnnealing(std::vector<int> &tour, std::vector<std::
 
 }
 
-simulatedAnnealing::~simulatedAnnealing()
-{
-    //dtor
-}
+
 //return a path after simulated annealing
 std::vector<int> simulatedAnnealing::annealing(std::vector<int> &tour, std::vector<std::vector<int>> &graph){
 

@@ -10,9 +10,8 @@ class simulatedAnnealing
 {
     public:
         simulatedAnnealing(std::vector<int> &tour, std::vector<std::vector<int>> &graph);
-        virtual ~simulatedAnnealing();
-        double temperature = 5; //10 works well for #2, need to make this dependent on n
-        double coolingRate = 0.1; //0.001 works for #2
+        const static double temperature = 5; //10 works well for #2, need to make this dependent on n
+        const static double coolingRate = 0.1; //0.001 works for #2
 
         int calcSize(std::vector<std::vector<int>> &graph, std::vector<int> &hamList);
         std::vector<int> annealing(std::vector<int> &tour, std::vector<std::vector<int>> &graph);
