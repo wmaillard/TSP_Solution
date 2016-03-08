@@ -9,7 +9,6 @@ adjacencyMatrix::adjacencyMatrix(std::string fileName, std::vector<std::vector<i
     vertices aNode;
     while (infile >> aNode.name >> aNode.x >> aNode.y){
         aNode.distance = nearbyint(sqrt(pow((aNode.x - 0), 2) + pow((aNode.y - 0), 2)));
-        //std::cout << "name: " << aNode.name << " x: " << aNode.x << " y: " << aNode.y << " Distance to 0,0: " << aNode.distance << std::endl;
         coordinates.push_back(aNode);
     }
 
